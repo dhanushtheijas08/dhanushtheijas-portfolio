@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nunito Sans", "sans-serif"],
+        "nunito-sans": ["Nunito Sans", "sans-serif"],
         "space-grotesk": ["Space Grotesk", "sans-serif"],
       },
     },
