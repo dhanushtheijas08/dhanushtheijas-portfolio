@@ -43,3 +43,13 @@
   transition: transform 0.2s ease-in-out;
   box-shadow: inset 0 0 3px #bf97ff70;
 }
+.button-primary:hover {
+  transform: scale(1.05);
+}
+.nav-bar {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: rgba(57, 21, 103, 0.129);
+
+  box-shadow: inset 0 0 3px #bf97ff70;
+}
