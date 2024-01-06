@@ -1,22 +1,10 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 
-// const animateVariants = {
-//   initial: {
-//     opacity: 0,
-//     y: "-100%",
-//   },
-//   animate: (index) => ({
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       delay: 0.06 * index,
-//       duration: 0.6,
-//       ease: "linear",
-//     },
-//   }),
-// };
+import Logo from "../ui/Logo";
+import NavLinks from "./NavLinks";
+import PrimaryButton from "../ui/PrimaryButton";
 
 export default function NavBar() {
   const [shouldVisible, setShouldVisible] = useState(true);
@@ -55,24 +43,11 @@ export default function NavBar() {
         hidden: { y: "-150%", transition: { type: "just" } },
       }}
       animate={shouldVisible ? "visible" : "hidden"}
-      className={`fixed z-10 mt-4 flex w-[95%] items-center justify-between  rounded-md px-4 py-3 ${"nav-bar"} `}
+      className="nav-bar fixed z-10 mt-4 flex w-[95%] items-center justify-between  rounded-md px-4 py-2 lg:py-3 "
     >
-      <div className="font-space-grotesk text-2xl font-bold text-white">
-        Dhanush Theijas
-      </div>
-      <ul className="font-nunito hidden items-center gap-10 text-lg font-semibold md:flex dark:text-white">
-        {navLinks.map((link, index) => (
-          <p key={index} className="cursor-pointer  hover:text-[#ff00ff]">
-            {link.name}
-          </p>
-        ))}
-      </ul>
-      {/* <div className="welcome-box flex items-center gap-4">
-        <div className="hidden text-white md:flex">Resume</div>
-      </div> */}
-      <button className="button-primary max-w-fit rounded-md px-6 py-2 text-white  transition-all duration-150">
-        Resume
-      </button>
+      <Logo>Dhanush Theijas</Logo>
+      <NavLinks />
+      <PrimaryButton>Resume</PrimaryButton>
     </motion.nav>
   );
 }
