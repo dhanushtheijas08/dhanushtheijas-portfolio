@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="relative z-0 flex w-full flex-col">
         <BlackHole />
 
-        <motion.div className="z-10 mt-24 flex  items-center justify-between gap-5 px-5 font-nunito-sans md:mt-36 md:px-10 lg:px-20">
+        <motion.div className="z-10 mt-24 flex  items-center justify-between gap-5 px-5 font-nunito-sans md:mt-40 md:px-10 lg:px-20">
           <MainContent />
           <SideImage />
         </motion.div>
