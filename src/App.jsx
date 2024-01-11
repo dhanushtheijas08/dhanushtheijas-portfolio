@@ -3,6 +3,7 @@ import SocialAccounts from "./components/SocialAccounts";
 import HeroSection from "./pages/HeroSection";
 import Projects from "./pages/Projects";
 import scroll from "./utils/scrollAnimation";
+import About from "./pages/About";
 export default function App() {
   useEffect(() => {
     scroll();
@@ -12,6 +13,7 @@ export default function App() {
       <SocialAccounts />
       <HeroSection />
       <Projects />
+      <About />
     </div>
   );
 }
