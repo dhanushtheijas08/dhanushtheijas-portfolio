@@ -1,24 +1,27 @@
 import PrimaryButton from "../ui/PrimaryButton";
+import SecondaryPara from "../ui/SecondaryPara";
 import SparklesIconButton from "../ui/SparklesIconButton";
 
 export default function MainContent() {
   return (
-    <div className="flex flex-col gap-12">
-      <SparklesIconButton>Hey I'm Dhanush Theijas</SparklesIconButton>
+    <div className="flex flex-col gap-8 lg:gap-12">
+      <SparklesIconButton>
+        Hey I'm <span className="font-semibold">Dhanush Theijas</span>
+      </SparklesIconButton>
 
-      <div className="text-5xl font-bold text-white">
-        Frontend Developer
-        <span className="mt-1.5 block text-[38px]">
+      <div className="xs:text-[34px] text-center font-sen text-[28px] font-bold leading-tight text-white sm:text-left sm:text-4xl md:text-[38px] md:leading-snug lg:text-6xl">
+        Fullstack Developer
+        <span className="xs:text-[26px] mt-1.5 block text-[22px] md:text-[28px] lg:text-[45px]">
           I build things for the web.
         </span>
       </div>
 
-      <p className="max-w-lg text-white opacity-70">
+      <SecondaryPara>
         I'm a Full Stack Software Engineer with experience in Website, Mobile,
-        and Software development. Check out my projects and skills.
-      </p>
+        and Software development. Check out my projects below.
+      </SecondaryPara>
 
-      <PrimaryButton classname="-mt-5">Let's Connect</PrimaryButton>
+      <PrimaryButton classname="lg:-mt-5">Let's Connect</PrimaryButton>
     </div>
   );
 }

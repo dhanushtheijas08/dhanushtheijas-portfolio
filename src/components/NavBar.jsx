@@ -43,11 +43,11 @@ export default function NavBar() {
         hidden: { y: "-150%", transition: { type: "just" } },
       }}
       animate={shouldVisible ? "visible" : "hidden"}
-      className="nav-bar fixed z-10 mt-4 flex w-[95%] items-center justify-between  rounded-md px-4 py-2 lg:py-3 "
+      className="nav-bar fixed z-10 mt-4 flex w-[93%] items-center justify-between rounded-md px-4 py-2 sm:w-[95%] sm:py-3 "
     >
       <Logo>Dhanush Theijas</Logo>
       <NavLinks />
-      <PrimaryButton>Resume</PrimaryButton>
+      <PrimaryButton classname={"hidden"}>Resume</PrimaryButton>
     </motion.nav>
   );
 }
