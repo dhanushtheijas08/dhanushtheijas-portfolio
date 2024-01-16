@@ -9,14 +9,14 @@ export default function MainContent() {
         Hey I'm <span className="font-semibold">Dhanush Theijas</span>
       </SparklesIconButton>
 
-      <div className="xs:text-[34px] text-center font-sen text-[28px] font-bold leading-tight text-white sm:text-left sm:text-4xl md:text-[38px] md:leading-snug lg:text-6xl">
+      <div className="xs:text-[34px] text-center font-sen text-[28px] font-bold leading-tight text-white sm:text-left sm:text-4xl md:text-[38px] md:leading-snug lg:text-[54px]">
         Fullstack Developer
-        <span className="xs:text-[26px] mt-1.5 block text-[22px] md:text-[28px] lg:text-[45px]">
+        <span className="xs:text-[26px] mt-1.5 block text-[22px] md:text-[28px] lg:text-[38px]">
           I build things for the web.
         </span>
       </div>
 
-      <SecondaryPara>
+      <SecondaryPara classname="md:max-w-sm md:text-base lg:max-w-md lg:text-[18px]">
         I'm a Full Stack Software Engineer with experience in Website, Mobile,
         and Software development. Check out my projects below.
       </SecondaryPara>
