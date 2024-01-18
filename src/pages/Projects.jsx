@@ -1,6 +1,7 @@
 import image1 from "../assets/1.png";
 import image2 from "../assets/car.webp";
 import ProjectItem from "../components/ProjectItem";
+import SectionHeading from "../ui/SectionHeading";
 
 const projectData = [
   {
@@ -22,8 +23,8 @@ const projectData = [
 
 export default function Projects() {
   return (
-    <section className=" z-10 flex flex-col gap-5 px-5 py-10 font-nunito-sans text-white  md:px-10 lg:px-24">
-      <h1 className="font-sen text-5xl">Projects</h1>
+    <section className="z-10 mt-10 flex flex-col gap-5 px-5 py-10 font-nunito-sans text-white  md:px-10 lg:px-20">
+      <SectionHeading>Projects</SectionHeading>
 
       <div className="mt-12 flex w-full flex-col gap-12">
         {projectData.map((project, index) => (
