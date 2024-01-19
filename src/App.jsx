@@ -4,6 +4,7 @@ import HeroSection from "./pages/HeroSection";
 import Projects from "./pages/Projects";
 import scroll from "./utils/scrollAnimation";
 import About from "./pages/About";
+import Guestbook from "./pages/Guestbook";
 export default function App() {
   useEffect(() => {
     scroll();
@@ -14,6 +15,7 @@ export default function App() {
       <HeroSection />
       <Projects />
       <About />
+      <Guestbook />
     </div>
   );
 }
