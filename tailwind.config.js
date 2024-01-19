@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         "nunito-sans": ["Nunito Sans", "sans-serif"],
         "space-grotesk": ["Space Grotesk", "sans-serif"],
+        sen: ["Sen", "sans-serif"],
+      },
+      screens: {
+        xs: "375px",
       },
     },
   },
