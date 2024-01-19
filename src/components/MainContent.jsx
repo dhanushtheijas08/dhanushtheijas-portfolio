@@ -4,14 +4,14 @@ import SparklesIconButton from "../ui/SparklesIconButton";
 
 export default function MainContent() {
   return (
-    <div className="flex flex-col gap-8 lg:gap-12">
+    <div className="flex flex-col gap-10 lg:gap-12">
       <SparklesIconButton>
         Hey I'm <span className="font-semibold">Dhanush Theijas</span>
       </SparklesIconButton>
 
-      <div className="xs:text-[34px] text-center font-sen text-[28px] font-bold leading-tight text-white sm:text-left sm:text-4xl md:text-[38px] md:leading-snug lg:text-[54px]">
+      <div className="text-center font-sen text-[28px] font-bold leading-tight text-white xs:text-[34px] sm:text-left sm:text-4xl md:text-[38px] md:leading-[1.3]  lg:text-[54px]">
         Fullstack Developer
-        <span className="xs:text-[26px] mt-1.5 block text-[22px] md:text-[28px] lg:text-[38px]">
+        <span className="block text-[22px] xs:text-[26px] md:text-[28px] lg:text-[38px]">
           I build things for the web.
         </span>
       </div>

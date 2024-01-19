@@ -3,7 +3,7 @@ import { MdInsertLink } from "react-icons/md";
 
 export default function ProjectItem({ image, heading, desc }) {
   return (
-    <div className="border-tertiary bg-bg-secondary/50  nav-bar-1 flex  flex-col overflow-hidden rounded-md border-[0.8px]  p-4">
+    <div className="border-tertiary bg-bg-secondary/50  nav-bar-1 flex  flex-col overflow-hidden rounded-md border-[0.8px] p-4 lg:h-60">
       <div className="flex flex-col gap-8 sm:flex-row">
         <div className="samp relative h-60 overflow-y-hidden rounded-xl object-center sm:w-full sm:self-center md:w-96">
           <img

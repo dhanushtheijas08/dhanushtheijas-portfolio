@@ -1,31 +1,37 @@
 import MyImage from "../assets/about-sec-image.jpeg";
-import PrimaryButton from "../ui/PrimaryButton";
+import SectionHeading from "../ui/SectionHeading";
 export default function About() {
   return (
-    <section className="z-10 flex flex-col-reverse justify-between px-5 py-10 font-nunito-sans text-white md:flex-row  md:px-10 lg:px-20">
+    <section className="z-10 mt-10 flex flex-col-reverse justify-center gap-10 px-5 py-10 font-nunito-sans text-white sm:flex-row md:justify-between md:px-10 lg:px-20">
       <div className="flex flex-col gap-6">
-        <h1 className="font-sen text-4xl">About</h1>
+        <SectionHeading classname="hidden sm:block">About</SectionHeading>
 
-        <h2 className="basis-1/2 text-3xl font-black tracking-tight sm:text-[44px] lg:leading-tight">
-          I'm Dhanush. I Live in India
-          <br />
-          coding the future into reality
-        </h2>
-        <p className="max-w-xl text-pretty text-lg leading-relaxed tracking-wide opacity-85">
+        <div className="mx-auto max-w-sm font-sen text-[19px] font-bold leading-tight text-white xs:text-[26px] sm:text-left md:mx-0 md:leading-[1.3]  lg:max-w-xl lg:text-[38px]">
+          I'm Dhanush. I Live in India coding the future into reality
+          {/* <span className="block text-[19px] xs:block xs:text-[26px] md:text-[28px] lg:text-[38px]">
+            coding the future into reality
+          </span> */}
+        </div>
+        <p className="max-w-lg self-center text-pretty text-base leading-relaxed  tracking-wide opacity-85 lg:max-w-xl lg:text-lg">
           I am a self-driven, career-oriented software developer specializing in
           front-end development and open-source, currently pursuing a bachelors
           degree in computer science. My expertise lies in building interactive
           web applications on the client side. Primarily working with
           technologies like JavaScript, Next.js, TypeScript and Python.
         </p>
-        <p className="max-w-xl text-pretty text-lg leading-relaxed tracking-wide opacity-85">
+        <p className="max-w-lg self-center text-pretty text-base leading-relaxed tracking-wide opacity-85 md:hidden lg:block lg:max-w-xl lg:text-lg">
           I strongly believe in continuous learning and improving myself, so I
           try my best to learn in any situation possible, unfavorable or not.
         </p>
       </div>
 
-      <div className="flex flex-col gap-5 self-end">
-        <img src={MyImage} alt="dhanush image" className="h-96 rounded-md" />
+      <div className="flex max-w-sm flex-col gap-5 self-center md:self-end lg:self-start">
+        <img
+          src={MyImage}
+          loading="lazy"
+          alt="dhanush image"
+          className="max-h-96 rounded-md"
+        />
         <div className="flex gap-2">
           <button className="welcome-box group flex-1 justify-center gap-2.5 rounded-md border border-[#7042f88b] px-2 py-1.5  text-xl font-bold opacity-90">
             View Resume
@@ -62,6 +68,8 @@ export default function About() {
           </button>
         </div>
       </div>
+
+      <SectionHeading classname="sm:hidden block">About</SectionHeading>
     </section>
   );
 }

@@ -5,7 +5,7 @@ export default function SideImage() {
     <img
       src={MianIcon}
       alt="Icons"
-      className=" hidden md:block md:h-40 lg:h-[28rem]"
+      className="hidden sm:block sm:w-64 md:w-[45%] lg:w-[40%]"
     />
   );
 }
