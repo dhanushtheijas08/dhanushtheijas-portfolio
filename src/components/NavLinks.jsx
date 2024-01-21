@@ -1,27 +1,9 @@
-const navLinks = [
-  {
-    name: "Home",
-    path: "",
-  },
-  {
-    name: "Projects",
-    path: "#projects",
-  },
-  {
-    name: "About",
-    path: "#about",
-  },
-  {
-    name: "Contact",
-    path: "#contact",
-  },
-];
-
-export default function NavLinks() {
+export default function NavLinks({ navLinks, handleClick }) {
   const renderNavLinks = navLinks.map((link, index) => (
     <a
       key={index}
       href={link.path}
+      onClick={() => handleClick(link.name.toLowerCase())}
       className="cursor-pointer text-white hover:text-opacity-70"
     >
       {link.name}
