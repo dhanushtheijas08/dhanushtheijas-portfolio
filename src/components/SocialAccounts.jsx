@@ -11,7 +11,7 @@ const socialAccounts = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/dhanush-theijas/",
+    link: "https://www.linkedin.com/in/dhanush-theijas-tp/",
     icon: <LiaLinkedinIn />,
     iconSize: "medium",
   },
