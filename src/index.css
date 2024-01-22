@@ -1,8 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600&family=Space+Grotesk:wght@500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.img-gradient {
+  background: linear-gradient(
+    142deg,
+    rgba(57, 21, 103, 0.7) 0%,
+    rgba(56, 29, 97, 0.128) 70%
+  );
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #030014;
+}
+html::-webkit-scrollbar {
+  width: 0.6vw;
+}
+html::-webkit-scrollbar-track {
+  background: #030014;
+}
+html::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1.5px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .welcome-text {
   background: linear-gradient(
@@ -23,15 +48,16 @@
   overflow: hidden;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border-radius: 32px;
   box-shadow: inset 0 -7px 11px #a48fff1f;
 
   position: relative;
-  width: -moz-max-content;
-  width: max-content;
   transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
 
+.text-balance {
+  white-space: unset;
+  text-wrap: balance;
+}
 .button-primary {
   background: linear-gradient(
       180deg,
@@ -43,13 +69,130 @@
   transition: transform 0.2s ease-in-out;
   box-shadow: inset 0 0 3px #bf97ff70;
 }
-.button-primary:hover {
-  transform: scale(1.05);
-}
+
 .nav-bar {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   background-color: rgba(57, 21, 103, 0.129);
 
   box-shadow: inset 0 0 3px #bf97ff70;
+}
+
+.sparkbutton-animation {
+  animation: spark 5s cubic-bezier(0.6, 0.6, 0, 1) infinite;
+}
+
+@keyframes spark {
+  50% {
+    opacity: 1;
+  }
+  0%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.sparkbutton-animation-before {
+  transform: translate(25%, 0%);
+  position: absolute;
+  animation: spark-before 5s cubic-bezier(0.6, 0.6, 0, 1) infinite;
+}
+@keyframes spark-before {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.test-class {
+  background-clip: text;
+  position: relative;
+  height: fit-content;
+  width: max-content;
+  overflow: hidden;
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+    76deg,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff
+  );
+
+  animation: header_slime__HXV8P 45s ease infinite;
+}
+.test-text {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: hsla(0, 0%, 100%, 0);
+  text-transform: capitalize;
+}
+
+.border-tertiary {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 34 34 / var(--tw-border-opacity));
+}
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(19 19 19 / var(--tw-border-opacity));
+}
+.bg-secondary\/50 {
+  background-color: hsla(0, 0%, 7%, 0.5);
+}
+
+.nav-bar-1 {
+  background: linear-gradient(
+    142deg,
+    rgba(57, 21, 103, 0.7) 0%,
+    rgba(56, 29, 97, 0.128) 70%
+  );
+}
+.nav-bar-2 {
+  background: linear-gradient(
+    92deg,
+    rgba(56, 29, 97, 0.128) 0%,
+    rgba(57, 21, 103, 0.7) 70%
+  );
+}
+
+.samp {
+  box-shadow:
+    0 0.7536981316190212px 3.7684906580951063px -0.08333333333333333px #0000000f,
+    0 1.926999365678057px 9.634996828390285px -0.16666666666666666px #00000014,
+    0 3.8632098289672285px 19.316049144836143px -0.25px #0000001a,
+    0 7.323306570379063px 36.616532851895315px -0.3333333333333333px #00000026,
+    0 14.556545505626126px 72.78272752813064px -0.4166666666666667px #0000003e,
+    0 32px 160px -0.5px #0007;
+}
+.links {
+  border-bottom: 1px;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.gradient-text {
+  background-image: linear-gradient(140deg, #e0e7ff 0%, #fde1ff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

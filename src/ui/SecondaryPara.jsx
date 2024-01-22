@@ -4,7 +4,7 @@ export default function SecondaryPara({
   classname,
 }) {
   return (
-    <p className={`text-sm text-white opacity-70  ${maxWidth} ${classname}`}>
+    <p className={`text-sm text-white  opacity-70  ${maxWidth} ${classname}`}>
       {children}
     </p>
   );

@@ -2,7 +2,10 @@ import MyImage from "../assets/about-sec-image.jpeg";
 import SectionHeading from "../ui/SectionHeading";
 export default function About() {
   return (
-    <section className="z-10 mt-10 flex flex-col-reverse justify-center gap-10 px-5 py-10 font-nunito-sans text-white sm:flex-row md:justify-between md:px-10 lg:px-20">
+    <section
+      id="about"
+      className="z-10 mt-10 flex flex-col-reverse justify-center gap-10 px-5 py-10 font-nunito-sans text-white sm:flex-row md:justify-between md:px-10 lg:px-20"
+    >
       <div className="flex flex-col gap-6">
         <SectionHeading classname="hidden sm:block">About</SectionHeading>
 
@@ -14,10 +17,10 @@ export default function About() {
         </div>
         <p className="max-w-lg self-center text-pretty text-base leading-relaxed  tracking-wide opacity-85 lg:max-w-xl lg:text-lg">
           I am a self-driven, career-oriented software developer specializing in
-          front-end development and open-source, currently pursuing a bachelors
-          degree in computer science. My expertise lies in building interactive
-          web applications on the client side. Primarily working with
-          technologies like JavaScript, Next.js, TypeScript and Python.
+          front-end development and open-source, currently pursuing a
+          engineering in computer science. My expertise lies in building
+          interactive web applications on the client side. Primarily working
+          with technologies like JavaScript, React, Next.js and TypeScript.
         </p>
         <p className="max-w-lg self-center text-pretty text-base leading-relaxed tracking-wide opacity-85 md:hidden lg:block lg:max-w-xl lg:text-lg">
           I strongly believe in continuous learning and improving myself, so I

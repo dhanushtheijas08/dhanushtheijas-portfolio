@@ -1,11 +1,11 @@
 export default function SparklesIconButton({ children }) {
   return (
-    <button className="welcome-box border  border-[#7042f88b] px-2 py-1.5 opacity-90">
+    <button className="welcome-box max-w-fit rounded-[32px] border border-[#7042f88b] px-2 py-1.5 opacity-90">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
-        className="h-2 w-2 text-[#b49bff] md:h-4 md:w-4 lg:h-6 lg:w-6"
+        className="h-5 w-5 text-[#b49bff] md:h-6 md:w-6"
       >
         <path
           fillRule="evenodd"
@@ -13,17 +13,8 @@ export default function SparklesIconButton({ children }) {
           clipRule="evenodd"
         />
       </svg>
-      <h1 className="relative">
-        <span
-          data-content="This is a button"
-          className={`welcome-text  before:z-40 before:ml-2 before:text-xs before:text-white  before:content-[attr(data-content)] md:text-sm  before:md:text-sm lg:text-base before:lg:text-base  ${"sparkbutton-animation-before"}`}
-        >
-          <span
-            className={`welcome-text  ml-2 text-xs md:text-sm   lg:text-base   ${"sparkbutton-animation"}`}
-          >
-            {children}
-          </span>
-        </span>
+      <h1 className="welcome-text relative  ml-2 text-sm lg:text-base">
+        {children}
       </h1>
     </button>
   );

@@ -38,7 +38,7 @@ export default function SocialAccounts() {
   ));
 
   return (
-    <ul className="fixed bottom-5 left-5 z-10 hidden flex-col items-center gap-5  after:block after:h-[90px] after:w-[1.5px] after:bg-[#a8b2d1] lg:flex">
+    <ul className="fixed bottom-5 left-5 z-20 hidden flex-col items-center gap-5  after:block after:h-[90px] after:w-[1.5px] after:bg-[#a8b2d1] lg:flex">
       {renderSocialAccounts}
     </ul>
   );

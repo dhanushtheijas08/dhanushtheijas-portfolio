@@ -1,7 +1,14 @@
 import { LiaGithub } from "react-icons/lia";
 import { MdInsertLink } from "react-icons/md";
-
-export default function ProjectItem({ image, heading, desc }) {
+export default function ProjectItem({
+  image,
+  heading,
+  desc,
+  githubLink,
+  liveLink,
+  githubText,
+  linkLinkText,
+}) {
   return (
     <div className="border-tertiary bg-bg-secondary/50  nav-bar-1 flex  flex-col overflow-hidden rounded-md border-[0.8px] p-4 lg:h-60">
       <div className="flex flex-col gap-8 sm:flex-row">
@@ -19,8 +26,8 @@ export default function ProjectItem({ image, heading, desc }) {
           <div className="flex flex-wrap gap-3.5 opacity-80">
             <div className="flex gap-2">
               <MdInsertLink className="text-2xl" />
-              <a href="" className="text-base">
-                <span className="hidden sm:inline">notiger.vercel.app</span>
+              <a href={liveLink} target="_blank" className="text-base">
+                <span className="hidden sm:inline">{linkLinkText}</span>
                 <span className="sm:hidden">Live Demo</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +49,8 @@ export default function ProjectItem({ image, heading, desc }) {
 
             <div className="links flex gap-2">
               <LiaGithub className="text-2xl" />
-              <a href="" className="text-base">
-                <span className="hidden sm:inline">
-                  dhanushtheijas08/notiger
-                </span>
+              <a href={githubLink} target="_blank" className="text-base">
+                <span className="hidden sm:inline">{githubText}</span>
                 <span className="sm:hidden">GitHub</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
