@@ -24,7 +24,7 @@ export default function MainContent() {
       <PrimaryButton
         btn={false}
         href="https://www.linkedin.com/in/dhanush-theijas-tp/"
-        classname="lg:-mt-5"
+        classname="lg:-mt-5 text-center"
       >
         Let's Connect
       </PrimaryButton>
