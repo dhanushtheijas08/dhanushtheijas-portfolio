@@ -8,7 +8,7 @@ export default function MyApp() {
       repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
       category="General"
       categoryId="DIC_kwDOLAZ8Ws4Cch5B"
-      mapping="url"
+      mapping="title"
       term="Welcome to my portfolio"
       reactionsEnabled="1"
       emitMetadata="0"
