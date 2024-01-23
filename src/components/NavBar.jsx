@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useScroll, useMotionValueEvent } from "framer-motion";
+import toast from "react-hot-toast";
 
 import Logo from "../ui/Logo";
 import NavLinks from "./NavLinks";
@@ -28,7 +29,9 @@ const navLinks = [
 export default function NavBar({ handleClick }) {
   const [shouldVisible, setShouldVisible] = useState(true);
   const { scrollY } = useScroll();
-
+  const handleBtnClick = function () {
+    toast.error("Feature yet to be complete");
+  };
   useMotionValueEvent(scrollY, "change", (latest) =>
     latest < scrollY.getPrevious()
       ? setShouldVisible(true)
@@ -45,7 +48,9 @@ export default function NavBar({ handleClick }) {
     >
       <Logo>Dhanush Theijas</Logo>
       <NavLinks navLinks={navLinks} handleClick={handleClick} />
-      <PrimaryButton classname={"hidden"}>Resume</PrimaryButton>
+      <PrimaryButton onClick={handleBtnClick} classname={"hidden"}>
+        Resume
+      </PrimaryButton>
     </motion.nav>
   );
 }

@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import MyImage from "../assets/about-sec-image.jpeg";
 import SectionHeading from "../ui/SectionHeading";
 export default function About() {
@@ -36,7 +37,10 @@ export default function About() {
           className="max-h-96 rounded-md"
         />
         <div className="flex gap-2">
-          <button className="welcome-box group flex-1 justify-center gap-2.5 rounded-md border border-[#7042f88b] px-2 py-1.5  text-xl font-bold opacity-90">
+          <button
+            onClick={() => toast.error("Feature yet to be complete")}
+            className="welcome-box group flex-1 justify-center gap-2.5 rounded-md border border-[#7042f88b] px-2 py-1.5  text-xl font-bold opacity-90"
+          >
             View Resume
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +57,10 @@ export default function About() {
               />
             </svg>
           </button>
-          <button className="welcome-box rounded-md border border-[#7042f88b]  px-2 py-1.5 text-xl opacity-90">
+          <button
+            onClick={() => toast.error("Feature yet to be complete")}
+            className="welcome-box rounded-md border border-[#7042f88b]  px-2 py-1.5 text-xl opacity-90"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
