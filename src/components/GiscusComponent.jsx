@@ -5,12 +5,12 @@ export default function GiscusComponent() {
     <div>
       <Giscus
         id="comments"
+        key="comments"
         repo="dhanushtheijas08/dhanushtheiajs-portfolio"
         repoId="R_kgDOLAZ8Wg"
-        category="Announcements"
+        category="General"
         categoryId="DIC_kwDOLAZ8Ws4Cch5A"
-        mapping="specific"
-        term="Welcome to @giscus/react component!"
+        mapping="pathname"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"
