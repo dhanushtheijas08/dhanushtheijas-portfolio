@@ -15,7 +15,7 @@ export default function ProjectItem({
         <div className="samp relative h-60 overflow-y-hidden rounded-xl object-center sm:w-full sm:self-center md:w-96">
           <img
             src={image}
-            alt=""
+            alt="project image"
             className="absolute rounded-xl object-cover transition-transform duration-[1s] ease-in-out hover:-translate-y-[77.5%]"
           />
         </div>

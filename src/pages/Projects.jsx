@@ -2,16 +2,17 @@ import ProjectItem from "../components/ProjectItem";
 import SectionHeading from "../ui/SectionHeading";
 
 import project1Image from "../assets/project-1.png";
+import project0Image from "../assets/project-0.png";
 
 const projectData = [
   {
-    image: project1Image,
-    heading: "Coinflow",
-    desc: "Coinflow is an react based crypto app that allows users to search for information about various cryptocurrencies in real-time.",
-    githubLink: "https://github.com/dhanushtheijas08/coinflow-v2",
-    liveLink: "https://coinflow-lime.vercel.app/",
-    githubText: "dhanushtheijas08/coinflow",
-    linkLinkText: "coinflow.vercel.app",
+    image: project0Image,
+    heading: "BuildUp Resume Builder",
+    desc: "Developed a Next.js application enabling users to create and customize resumes based on job type and experience, featuring real-time previews and downloadable PDFs. Utilized local storage for guest users and PostgreSQL for logged-in users, with a responsive design using Tailwind CSS.",
+    githubLink: "https://github.com/dhanushtheijas08/resume-builder",
+    liveLink: "https://buildup-resume.vercel.app/",
+    githubText: "dhanushtheijas08/resume-builder",
+    linkLinkText: "buildup-resume.vercel.app",
   },
   {
     image: project1Image,
