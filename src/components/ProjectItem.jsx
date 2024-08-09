@@ -8,15 +8,18 @@ export default function ProjectItem({
   liveLink,
   githubText,
   linkLinkText,
+  isScrollAble = false,
 }) {
   return (
     <div className="border-tertiary bg-bg-secondary/50  nav-bar-1 flex  flex-col overflow-hidden rounded-md border-[0.8px] p-4 lg:h-60">
-      <div className="flex flex-col gap-8 sm:flex-row">
-        <div className="samp relative h-60 overflow-y-hidden rounded-xl object-center sm:w-full sm:self-center md:w-96">
+      <div className="flex h-full flex-col gap-8 sm:flex-row">
+        <div className="samp relative h-full overflow-y-hidden rounded-xl object-center sm:w-full sm:self-center md:w-96">
           <img
             src={image}
             alt="project image"
-            className="absolute rounded-xl object-cover transition-transform duration-[1s] ease-in-out hover:-translate-y-[77.5%]"
+            className={`absolute rounded-xl object-cover transition-transform duration-[1s] ease-in-out  ${
+              isScrollAble ? "hover:-translate-y-[77.5%]" : "h-full"
+            }`}
           />
         </div>
 

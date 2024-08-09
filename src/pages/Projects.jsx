@@ -3,6 +3,8 @@ import SectionHeading from "../ui/SectionHeading";
 
 import project1Image from "../assets/project-1.png";
 import project0Image from "../assets/project-0.png";
+import project2Image from "../assets/project-img-1.png";
+import project3Image from "../assets/project-2.png";
 
 const projectData = [
   {
@@ -13,6 +15,27 @@ const projectData = [
     liveLink: "https://buildup-resume.vercel.app/",
     githubText: "dhanushtheijas08/resume-builder",
     linkLinkText: "buildup-resume.vercel.app",
+    isScrollAble: false,
+  },
+  {
+    image: project2Image,
+    heading: "House GRW",
+    desc: "House GRW is a house rental application designed to streamline the booking process and provide a seamless experience for users.",
+    githubLink: "https://github.com/dhanushtheijas08/house-rental-react-app",
+    liveLink: "https://house-rental-react-app.vercel.app/",
+    githubText: "dhanushtheijas08/house-GRW",
+    linkLinkText: "house-grw.vercel.app",
+    isScrollAble: true,
+  },
+  {
+    image: project3Image,
+    heading: "Pepperoni Express",
+    desc: "The Pizza Ordering Website is a React-based web app where users can browse, customize, and order pizzas for delivery or pickup. Built with Vite, it ensures a fast and responsive user experience.",
+    githubLink: "https://github.com/dhanushtheijas08/pizza-ordering-website",
+    liveLink: "https://pepperoni-express.vercel.app/",
+    githubText: "dhanushtheijas08/pepperoni",
+    linkLinkText: "pepperoni.vercel.app",
+    isScrollAble: false,
   },
   {
     image: project1Image,
@@ -22,15 +45,7 @@ const projectData = [
     liveLink: "https://coinflow-lime.vercel.app/",
     githubText: "dhanushtheijas08/coinflow",
     linkLinkText: "coinflow.vercel.app",
-  },
-  {
-    image: project1Image,
-    heading: "Coinflow",
-    desc: "Coinflow is an react crypto app that allows users to search for information about various cryptocurrencies in real-time.",
-    githubLink: "https://github.com/dhanushtheijas08/coinflow-v2",
-    liveLink: "https://coinflow-lime.vercel.app/",
-    githubText: "dhanushtheijas08/coinflow",
-    linkLinkText: "coinflow.vercel.app",
+    isScrollAble: true,
   },
 ];
 
@@ -53,6 +68,7 @@ export default function Projects() {
             liveLink={project.liveLink}
             githubText={project.githubText}
             linkLinkText={project.linkLinkText}
+            isScrollAble={project.isScrollAble}
           />
         ))}
       </div>
