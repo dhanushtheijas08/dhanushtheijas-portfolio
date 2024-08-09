@@ -37,8 +37,10 @@ export default function About() {
           className="max-h-96 rounded-md"
         />
         <div className="flex gap-2">
-          <button
-            onClick={() => toast.error("Feature yet to be complete")}
+          <a
+            href="https://drive.google.com/file/d/1lgTrPYakFMlFKmEM6oaJNCjeWVDknLj6/view?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
             className="welcome-box group flex-1 justify-center gap-2.5 rounded-md border border-[#7042f88b] px-2 py-1.5  text-xl font-bold opacity-90"
           >
             View Resume
@@ -56,7 +58,7 @@ export default function About() {
                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
               />
             </svg>
-          </button>
+          </a>
           <button
             onClick={() => toast.error("Feature yet to be complete")}
             className="welcome-box rounded-md border border-[#7042f88b]  px-2 py-1.5 text-xl opacity-90"
