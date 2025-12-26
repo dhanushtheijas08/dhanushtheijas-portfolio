@@ -2,12 +2,13 @@ import { useState } from "react";
 import Form from "../components/Form";
 import SectionHeading from "../ui/SectionHeading";
 import toast from "react-hot-toast";
+import resumeData from "../data/resumeData";
 
 export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
   const copyToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText("dhanushtheijas08@gmail.com");
+      await navigator.clipboard.writeText(resumeData.personal.email);
       setIsCopied(true);
       setTimeout(() => {
         setIsCopied(false);
@@ -57,7 +58,7 @@ export default function Contact() {
             />
           </svg>
           <span className="px-5 py-4 text-sm opacity-100  transition-opacity duration-500 group-hover:opacity-15 sm:px-4 md:px-5 lg:text-[1.3rem]">
-            dhanushtheijas08@gmail.com
+            {resumeData.personal.email}
           </span>
         </div>
       </div>

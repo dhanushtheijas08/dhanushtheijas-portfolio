@@ -1,20 +1,32 @@
 import ProjectItem from "../components/ProjectItem";
 import SectionHeading from "../ui/SectionHeading";
+import resumeData from "../data/resumeData";
 
-import project1Image from "../assets/project-1.png";
 import project0Image from "../assets/project-0.png";
+import project1Image from "../assets/project-1.png";
 import project2Image from "../assets/project-img-1.png";
 import project3Image from "../assets/project-2.png";
 
 const projectData = [
   {
     image: project0Image,
-    heading: "BuildUp Resume Builder",
-    desc: "Developed a Next.js application enabling users to create and customize resumes based on job type and experience, featuring real-time previews and downloadable PDFs. Utilized local storage for guest users and PostgreSQL for logged-in users, with a responsive design using Tailwind CSS.",
-    githubLink: "https://github.com/dhanushtheijas08/resume-builder",
-    liveLink: "https://buildup-resume.vercel.app/",
+    heading: resumeData.projects[0].title,
+    desc: "Full-stack resume generator with Next.js and Prisma for real-time customization and PDF downloads. Features dynamic forms, live preview, and responsive design using Tailwind CSS, React Redux, and Zod validation.",
+    githubLink: resumeData.projects[0].repo,
     githubText: "dhanushtheijas08/resume-builder",
-    linkLinkText: "buildup-resume.vercel.app",
+    liveLink: null,
+    linkLinkText: "",
+    isScrollAble: false,
+  },
+  {
+    image: null,
+    heading: resumeData.projects[1].title,
+    desc:
+      resumeData.projects[1].points[0] + " " + resumeData.projects[1].points[1],
+    githubLink: resumeData.projects[1].repo,
+    githubText: "dhanushtheijas08/auth-node",
+    liveLink: null,
+    linkLinkText: "",
     isScrollAble: false,
   },
   {
@@ -75,24 +87,3 @@ export default function Projects() {
     </section>
   );
 }
-
-// import project2Image from "../assets/project-2.png";
-// import project3Image from "../assets/project-3.png";
-//  {
-//     image: project2Image,
-//     heading: "Pepperoni Express",
-//     desc: "Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.",
-//     githubLink: "https://github.com/dhanushtheijas08/pizza-ordering-website",
-//     liveLink: "https://pepperoni-express.vercel.app/",
-//     githubText: "dhanushtheijas08/pepperoni",
-//     linkLinkText: "pepperoni.vercel.app",
-//   },
-//   {
-//     image: project3Image,
-//     heading: "Bloom",
-//     desc: "Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.",
-//     githubLink: "https://github.com/dhanushtheijas08/react-hotel-booking-v2",
-//     liveLink: "https://bloom-spin.vercel.app/",
-//     githubText: "dhanushtheijas08/pepperoni",
-//     linkLinkText: "pepperoni.vercel.app",
-//   },

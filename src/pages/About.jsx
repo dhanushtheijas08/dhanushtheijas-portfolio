@@ -1,6 +1,8 @@
 import toast from "react-hot-toast";
 import MyImage from "../assets/about-sec-image.jpeg";
 import SectionHeading from "../ui/SectionHeading";
+import resumeData from "../data/resumeData";
+
 export default function About() {
   return (
     <section
@@ -11,21 +13,15 @@ export default function About() {
         <SectionHeading classname="hidden sm:block">About</SectionHeading>
 
         <div className="mx-auto max-w-sm font-sen text-[19px] font-bold leading-tight text-white xs:text-[26px] sm:text-left md:mx-0 md:leading-[1.3]  lg:max-w-xl lg:text-[38px]">
-          I'm Dhanush. I Live in India coding the future into reality
+          I'm {resumeData.personal.name.split(' ')[0]}. I Live in {resumeData.personal.location.split(',')[0]} coding the future into reality
           {/* <span className="block text-[19px] xs:block xs:text-[26px] md:text-[28px] lg:text-[38px]">
             coding the future into reality
           </span> */}
         </div>
         <p className="max-w-lg self-center text-pretty text-base leading-relaxed  tracking-wide opacity-85 lg:max-w-xl lg:text-lg">
-          I am a self-driven, career-oriented software developer specializing in
-          front-end development and open-source, currently pursuing a
-          engineering in computer science. My expertise lies in building
-          interactive web applications on the client side. Primarily working
-          with technologies like JavaScript, React, Next.js and TypeScript.
-        </p>
-        <p className="max-w-lg self-center text-pretty text-base leading-relaxed tracking-wide opacity-85 md:hidden lg:block lg:max-w-xl lg:text-lg">
-          I strongly believe in continuous learning and improving myself, so I
-          try my best to learn in any situation possible, unfavorable or not.
+          I specialize in building scalable web applications using modern technologies like React, Next.js, and Node.js.
+          <br />
+          Focused on writing clean, maintainable code and continuously learning through real-world projects.
         </p>
       </div>
 
@@ -38,7 +34,7 @@ export default function About() {
         />
         <div className="flex gap-2">
           <a
-            href="https://drive.google.com/file/d/1lgTrPYakFMlFKmEM6oaJNCjeWVDknLj6/view?usp=drive_link"
+            href="https://drive.google.com/file/d/17f5iR5j-XQTJOwl-gOXkPBSHZIBnPZV-/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="welcome-box group flex-1 justify-center gap-2.5 rounded-md border border-[#7042f88b] px-2 py-1.5  text-xl font-bold opacity-90"
